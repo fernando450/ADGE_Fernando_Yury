@@ -65,10 +65,10 @@ plt.show()
 
 # 3. Distribución por categoría de afiliación
 plt.figure(figsize=(8, 5))
-df['CATEGORIA'].value_counts().plot(kind='bar', color='orange')
+df['CATEGORIA'].value_counts().plot(kind='barh', color='orange')
 plt.title('Distribución por categoría de afiliación')
-plt.xlabel('Categoría')
-plt.ylabel('Número de afiliados')
+plt.xlabel('Número de afiliados')
+plt.ylabel('Categoría')
 plt.tight_layout()
 plt.show()
 
